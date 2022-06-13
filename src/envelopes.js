@@ -59,8 +59,14 @@ envRouter.delete("/:envId", (req, res, next) => {
   res.status(200).send(deletedInst);
 });
 
-envRouter.put("/transfer/:from/:to", (req, res, next) => {
-  console.log(req.params);
+// envRouter.post("/:from/transfer/:to", (req, res, next) => {
+//   console.log(req.params);
+//   //   res.status(200).send();
+// });
 
-  res.status(200).send();
+// envRouter.get("/:from/transfer/:to", (req, res, next) => {
+// envRouter.get("/:from/transfer", (req, res, next) => {
+envRouter.get(":from/transfer", (req, res, next) => {
+  console.log(req.params);
+  //   res.status(200).send();
 });

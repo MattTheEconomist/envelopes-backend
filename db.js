@@ -56,7 +56,6 @@ const deleteInstance = (requestedId) => {
   //   console.log("reqId", requestedId, typeof requestedId);
 
   const dataIdx = db.findIndex((row) => row.id === requestedId);
-  //   console.log(dataIdx);
   if (dataIdx > -1) {
     db.splice(dataIdx, 1);
     return true;
